@@ -4,40 +4,44 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - ProyectoTFG</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/js/site.js" asp-append-version="true" />
     <link rel="stylesheet" href="~/ProyectoTFG.styles.css" asp-append-version="true" />
+
 </head>
 <body>
+
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
+                <img src="/img/perro.png" alt="" width="30" height="24">
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Segunda Oportunidad</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav position-absolute end-0">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Quienes Somos</a>
+                            <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="QuienesSomos">Quienes Somos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Adopta">Adopta</a>
+                            <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Adopta">Adopta</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Ayudanos">Ayúdanos</a>
+                            <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Contacto">Contacto</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Contacto">Contacto</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Management" asp-action="Index">Gestión</a>
+                            <a class="nav-link text-light" asp-area="" asp-controller="Management" asp-action="Index">Gestión</a>
                         </li>
                     </ul>
+
                 </div>
             </div>
         </nav>
+
     </header>
     <div class="container">
         <main role="main" class="pb-3">
@@ -45,11 +49,87 @@
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            Copyright 2022 <a asp-area="" asp-controller="Home" asp-action="Privacy">Contacto</a>
+    <!-- Footer -->
+    <footer class="bg-dark text-center text-white">
+        <!-- Grid container -->
+        <div class="container p-4">
+
+
+
+            <!-- Section: Links -->
+            <section class="">
+                <!--Grid row-->
+                <div class="row justify-content-center">
+
+                    <!--Grid column-->
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase">Organizaciones</h5>
+
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <a href="https://animalistas.org/" class="text-white">Animalistas.org</a>
+                            </li>
+                            <li>
+                                <a href="https://pacma.es/" class="text-white">Pacma</a>
+                            </li>
+                            <li>
+                                <a href="https://faada.org/" class="text-white">Faada</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--Grid column-->
+                    <!--Grid column-->
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase">Enlaces de Interés</h5>
+
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <a href="https://www.expertoanimal.com/" class="text-white">Experto Animal</a>
+                            </li>
+                            <li>
+                                <a href="https://www.boe.es/buscar/pdf/2016/BOE-A-2016-11097-consolidado.pdf" class="text-white">Ley Antimaltrato Animal</a>
+                            </li>
+                            <li>
+                                <a href="https://adopcioneslamadrilena.org/" class="text-white">Adopciones la Madrileña</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--Grid column-->
+                    <!--Grid column-->
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase">Protectoras Amigas</h5>
+
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <a href="https://www.miwuki.com/" class="text-white">Miwuki</a>
+                            </li>
+                            <li>
+                                <a href="https://www.srperro.com/" class="text-white">Sr Perro</a>
+                            </li>
+                            <li>
+                                <a href="https://www.fundacionelarcadenoe.com/" class="text-white">El Arca de Noé</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--Grid column-->
+                </div>
+                <!--Grid row-->
+            </section>
+            <!-- Section: Links -->
+        </div>
+        <!-- Grid container -->
+        <!-- Copyright -->
+        <!-- Footer -->
+        <div class="p-5 bg-dark text-white text-center position-relative">
+            <div class="container">
+                <p class="lead">Copyright &copy; 2022</p>
+            </div>
         </div>
     </footer>
+    <!-- Copyright -->
+    <!-- Footer -->
+
+
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>

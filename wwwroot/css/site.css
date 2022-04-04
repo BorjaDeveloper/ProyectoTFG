@@ -1,18 +1,175 @@
 html {
-  font-size: 14px;
+    font-size: 14px;
 }
 
 @media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+    html {
+        font-size: 16px;
+    }
 }
 
 html {
-  position: relative;
-  min-height: 100%;
+    position: relative;
+    min-height: 100%;
 }
 
 body {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
 }
+
+.adopta {
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: 35rem;
+    padding: 15rem 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url("../img/header.jpg");
+    background-attachment: scroll;
+    background-size: cover;
+}
+
+    .adopta h1, .adopta .h1 {
+        font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+        letter-spacing: 0.8rem;
+        background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+    }
+
+    .adopta h2, .adopta .h2 {
+        max-width: 20rem;
+        font-size: 1rem;
+    }
+
+@media (min-width: 768px) {
+    .adopta h1, .adopta .h1 {
+        font-size: 4rem;
+        line-height: 4rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .adopta {
+        height: 100vh;
+        padding: 0;
+    }
+
+        .adopta h1, .adopta .h1 {
+            font-size: 6.5rem;
+            line-height: 6.5rem;
+            letter-spacing: 0.8rem;
+        }
+
+        .adopta h2, .adopta .h2 {
+            max-width: 30rem;
+            font-size: 1.25rem;
+        }
+}
+
+.about {
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: 35rem;
+    padding: 15rem 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url("../img/header.jpg");
+    background-attachment: scroll;
+    background-size: cover;
+}
+
+    .about h1, .about .h1 {
+        font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+        letter-spacing: 0.8rem;
+        background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+    }
+
+    .about h2, .about .h2 {
+        max-width: 20rem;
+        font-size: 3rem;
+    }
+
+@media (min-width: 768px) {
+    .about h1, .about .h1 {
+        font-size: 4rem;
+        line-height: 4rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .about {
+        height: 100vh;
+        padding: 0;
+    }
+
+        .about h1, .about .h1 {
+            font-size: 6.5rem;
+            line-height: 6.5rem;
+            letter-spacing: 0.8rem;
+        }
+
+        .about h2, .about .h2 {
+            max-width: 30rem;
+            font-size: 1.25rem;
+        }
+}
+
+.gradient-custom-2 {
+    /* fallback for old browsers */
+    background: #fccb90;
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
+}
+
+@media (min-width: 768px) {
+    .gradient-form {
+        height: 100vh !important;
+    }
+}
+
+@media (min-width: 769px) {
+    .gradient-custom-2 {
+        border-top-right-radius: .3rem;
+        border-bottom-right-radius: .3rem;
+    }
+}
+
+
+#overbox3 {
+        position: fixed;
+        bottom: 0px;
+        left: 0px;
+        width: 100%;
+        z-index: 999999;
+        display: block;
+}
+
+#infobox3 {
+        margin: auto;
+        position: relative;
+        top: 0px;
+        height: 58px;
+        width: 100%;
+        text-align:center;
+        background-color: #eeeeee;
+}
+
+    #infobox3 p {
+            line-height:58px;
+            font-size:12px;
+            text-align:center;
+    }
+
+        #infobox3 p a {
+                margin-right:5px;
+                text-decoration: underline;
+        }

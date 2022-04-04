@@ -6,4 +6,33 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Remove="wwwroot\NewFolder\**" />
+    <Content Remove="wwwroot\NewFolder\**" />
+    <EmbeddedResource Remove="wwwroot\NewFolder\**" />
+    <None Remove="wwwroot\NewFolder\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Controllers\Interno.cs" />
+    <Compile Remove="Views\Home\Index1.cshtml.cs" />
+    <Compile Remove="Views\Home\QuienesSomos.cshtml.cs" />
+    <Compile Remove="Views\Management\HomeController.cs" />
+    <Compile Remove="Views\Management\Index1.cshtml.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="Views\Home\Ayudanos.cshtml" />
+    <Content Remove="Views\Home\Index1.cshtml" />
+    <Content Remove="Views\Management\Index1.cshtml" />
+    <Content Remove="wwwroot\img\pexels-laurie-gouley-53261 %281%29.jpg" />
+    <Content Remove="wwwroot\img\pexels-robert-bogdan-663573.jpg" />
+    <Content Remove="wwwroot\js\cookies.js" />
+    <Content Remove="wwwroot\js\JavaScript.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\img\NewFolder\" />
+  </ItemGroup>
+
 </Project>

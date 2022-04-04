@@ -1,11 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using ProyectoTFG.Models;
-using System.Diagnostics;
-
 
 namespace ProyectoTFG.Controllers
 {
-    public class Management : Controller
+    public class Interno : Controller
     {
         public IActionResult Index()
         {

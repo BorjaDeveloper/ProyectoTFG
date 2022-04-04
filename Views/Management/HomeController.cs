@@ -1,11 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using ProyectoTFG.Models;
-using System.Diagnostics;
 
-
-namespace ProyectoTFG.Controllers
+namespace ProyectoTFG.Views.Management
 {
-    public class Management : Controller
+    public class HomeController : Controller
     {
         public IActionResult Index()
         {
