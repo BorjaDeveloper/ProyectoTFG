@@ -1,10 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-
-
 namespace ProyectoTFG.Controllers
 {
-    public class Management : Controller
+    public class HomeController1 : Controller
     {
         public IActionResult Index()
         {
