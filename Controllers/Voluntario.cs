@@ -2,7 +2,7 @@
 
 namespace ProyectoTFG.Controllers
 {
-    public class HomeController1 : Controller
+    public class Voluntario : Controller
     {
         public IActionResult Index()
         {
