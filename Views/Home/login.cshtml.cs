@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace ProyectoTFG.Views.Home
 {
-    public class QuienesSomosModel : PageModel
+    public class loginModel : PageModel
     {
         public void OnGet()
         {
