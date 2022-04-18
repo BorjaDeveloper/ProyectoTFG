@@ -25,6 +25,8 @@ html {
 }
 
 body {
+
+    background-color: blue;
     margin-bottom: 60px;
 }
 
@@ -41,19 +43,15 @@ body {
 
     .adopta h1, .adopta .h1 {
         font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-        font-size: 2.5rem;
-        line-height: 2.5rem;
+        font-size: 1.5rem;
+        line-height: 1.5rem;
         letter-spacing: 0.8rem;
-        background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
+        background-color: white;
         -webkit-text-fill-color: transparent;
         -webkit-background-clip: text;
         background-clip: text;
     }
-
-    .adopta h2, .adopta .h2 {
-        max-width: 20rem;
-        font-size: 1rem;
-    }
+    
 
 @media (min-width: 768px) {
     .adopta h1, .adopta .h1 {
