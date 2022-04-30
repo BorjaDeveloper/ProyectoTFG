@@ -29,7 +29,9 @@ namespace ProyectoTFG.Controllers
 
             if (user != null)
             {
-                return View(returnUrl);
+                AnimalShelterDbContext.CurrentUser = user;
+
+                return Redirect(returnUrl);
             }
 
             var model = new AccountModel

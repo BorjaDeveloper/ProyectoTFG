@@ -4,6 +4,8 @@ namespace ProyectoTFG.Model
 {
     public class AnimalShelterDbContext : DbContext
     {
+        public static User? CurrentUser;
+
         public DbSet<User> Users => Set<User>();
         public DbSet<Animal> Animals => Set<Animal>();
 
