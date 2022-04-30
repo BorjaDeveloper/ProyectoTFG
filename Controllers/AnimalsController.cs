@@ -8,7 +8,7 @@ namespace ProyectoTFG.Controllers
     {
         private readonly AnimalShelterDbContext _context;
 
-        const int columnNumber = 3;
+        const int ColumnNumber = 3;
 
         public AnimalsController(AnimalShelterDbContext context)
         {
@@ -38,9 +38,9 @@ namespace ProyectoTFG.Controllers
             var result = new List<List<Animal>>();
             var current = new List<Animal>();
 
-            foreach (var animal in _context.Animal.Where(a => a.Type == animalType))
+            foreach (var animal in _context.Animals.Where(a => a.Type == animalType))
             {
-                if (current.Count >= columnNumber)
+                if (current.Count >= ColumnNumber)
                 {
                     result.Add(current);
                     current = new List<Animal>();

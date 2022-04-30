@@ -38,7 +38,7 @@
 		<Compile Remove="Views\Home\QuienesSomos.cshtml.cs" />
 		<Compile Remove="Views\Management\HomeController.cs" />
 		<Compile Remove="Views\Management\Index1.cshtml.cs" />
-		<Compile Remove="Views\Usuario\Index.cshtml.cs" />
+		<Compile Remove="Views\Client\Index.cshtml.cs" />
 	</ItemGroup>
 
 	<ItemGroup>

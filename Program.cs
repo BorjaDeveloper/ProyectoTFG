@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.EntityFrameworkCore;
 using ProyectoTFG.Model;
 
@@ -8,6 +9,13 @@ builder.Services.AddControllersWithViews();
 
 builder.Services
     .AddDbContext<AnimalShelterDbContext>(options => options.UseSqlite("Data Source=basedatostfg.db"));
+
+builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+        .AddCookie(options =>
+        {
+            options.LoginPath = "/Account/Login/";
+            options.AccessDeniedPath = "/Account/Forbidden/";
+        });
 
 var app = builder.Build();
 
@@ -26,6 +34,7 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllerRoute(

@@ -2,9 +2,9 @@
 
 namespace ProyectoTFG.Controllers
 {
-    public class Usuario : Controller
+    public class AccountController : Controller
     {
-        public IActionResult Index()
+        public IActionResult Login(string returnUrl)
         {
             return View();
         }
