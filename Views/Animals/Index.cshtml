@@ -1,0 +1,64 @@
+﻿@{
+    ViewData["Title"] = "Animales";
+}
+
+@model AnimalsModel
+
+<div class="container">
+    <h2 class="text-center my-4 text-light">Perros</h2>
+</div>
+
+@foreach (var dogsList in Model.Dogs)
+{
+    <div class="row row-cols-1 row-cols-md-3 g-4 my-4">
+
+        @foreach (var dog in dogsList)
+        {
+            <div class="col">
+                <div class="card h-100 border-3 border-dark">
+                    <img src="~/img/@dog.Image" class="card-img-top" alt="Waterfall">
+                    <div class="card-body">
+                        <h5 class="card-title">@dog.Name (@dog.Age)</h5>
+                        <p class="card-text">
+                            @dog.Description
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://localhost:7018/Usuario" class="btn btn-secondary">Reserva tu cita</a>
+                    </div>
+                </div>
+            </div>
+        }
+
+    </div>
+}
+
+
+<div class="container">
+    <h2 class="text-center my-4 text-light">Gatos</h2>
+</div>
+
+@foreach (var dogsList in Model.Cats)
+{
+    <div class="row row-cols-1 row-cols-md-3 g-4 my-4">
+
+        @foreach (var dog in dogsList)
+        {
+            <div class="col">
+                <div class="card h-100 border-3 border-dark">
+                    <img src="~/img/@dog.Image" class="card-img-top" alt="Waterfall">
+                    <div class="card-body">
+                        <h5 class="card-title">@dog.Name (@dog.Age)</h5>
+                        <p class="card-text">
+                            @dog.Description
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://localhost:7018/Usuario" class="btn btn-secondary">Reserva tu cita</a>
+                    </div>
+                </div>
+            </div>
+        }
+
+    </div>
+}

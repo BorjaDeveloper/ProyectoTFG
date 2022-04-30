@@ -11,11 +11,6 @@ namespace ProyectoTFG.Controllers
             return View();
         }
 
-        public IActionResult Animales()
-        {
-            return View();
-        }
-
         public IActionResult Voluntarios()
         {
             return View();
