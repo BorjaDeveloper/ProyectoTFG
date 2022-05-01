@@ -5,12 +5,21 @@
 @model AccountModel
 
 <form method="post" asp-controller="account" asp-action="signin">
-    <label>Usuario</label>
-    <input type="text" name="username" />
-    <label>Contraseña</label>
-    <input type="password" name="password" />
-    <input type="hidden" name="returnUrl" value="@Model.ReturnUrl" />
-    <input type="submit" placeholder="Acceder" />
+    <!-- Email input -->
+    <div class="form-outline my-4">
+        <label>Usuario</label>
+        <input type="text" name="username" />
+    </div>
+
+    <!-- Password input -->
+    <div class="form-outline my-4">
+        <label>Contraseña</label>
+        <input type="password" name="password" />
+        <input type="hidden" name="returnUrl" value="@Model.ReturnUrl" />
+        <input type="submit" placeholder="Acceder" />
+    </div>  
+
 </form>
+
 
 @Model.ErrorMessage

@@ -49,6 +49,7 @@
 		<Content Remove="Views\Management\Index1.cshtml" />
 		<Content Remove="Views\Voluntario.cshtml" />
 		<Content Remove="wwwroot\css\estilos.css" />
+		<Content Remove="wwwroot\css\login.css" />
 		<Content Remove="wwwroot\css\StyleSheet.css" />
 		<Content Remove="wwwroot\css\StyleSheet.scss" />
 		<Content Remove="wwwroot\img\pexels-laurie-gouley-53261 %281%29.jpg" />
