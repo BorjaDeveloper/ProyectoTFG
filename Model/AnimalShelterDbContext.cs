@@ -40,9 +40,9 @@ namespace ProyectoTFG.Model
 
 
                 var cat1 = new Animal(AnimalTypeEnum.Cat, "Apolo", "Apolo llegó a nuestra protectora hace ahora 2 meses. Este macho llegó lleno de heridas y con una fractura en una de sus patas, pero se ha recompuesto y busca una familia que le de el cariño que merece.", 2, "gato6.jpg");
-                var cat2 = new Animal(AnimalTypeEnum.Cat, "Disha", "Esta preciosa gatita de 8 meses nos la encontramos en un parque y no paró de seguirnos hasta venirse con nosotros.", 2, "gato4.jpg");
-                var cat3 = new Animal(AnimalTypeEnum.Cat, "Rayo", "Un año tiene Rayo y es un gato macho super cariñoso que se puede tirar jugando con las moscas horas y horas.", 2, "gato1.jpg");
-                var cat4 = new Animal(AnimalTypeEnum.Cat, "Israel", "Más que un gato tiene caracter de perro, siempre encima de las personas", 2, "gato3.jpg");
+                var cat2 = new Animal(AnimalTypeEnum.Cat, "Disha", "Esta preciosa gatita de 8 meses nos la encontramos en un parque y no paró de seguirnos hasta venirse con nosotros.", 3, "gato4.jpg");
+                var cat3 = new Animal(AnimalTypeEnum.Cat, "Rayo", "Un año tiene Rayo y es un gato macho super cariñoso que se puede tirar jugando con las moscas horas y horas.", 1, "gato1.jpg");
+                var cat4 = new Animal(AnimalTypeEnum.Cat, "Israel", "Más que un gato tiene caracter de perro, siempre encima de las personas", 1, "gato3.jpg");
 
                 context.AddRange(new[] { cat1, cat2, cat3, cat4 });
 

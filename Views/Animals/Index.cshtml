@@ -5,7 +5,19 @@
 @model AnimalsModel
 
 <div class="container">
-    <h2 class="text-center my-4 text-light">Perros</h2>
+    <h2 class="text-center my-4 text-dark">FICHAS DE NUESTROS ANIMALES</h2>
+    <p>
+        A continuación podéis ver los animales que actualmente tenemos disponibles en
+        nuestra protectora para su adopción. En primer lugar se indica el nombre del animal,
+        seguido de su edad (en algunos casos imposible de saber exacta, sino estimada por nuestros
+        veterinarios) y una breve anotación de su carácter.
+    </p>
+    <p>
+        En caso de estar interesados en su adopción, debéis hacer click en el botón de abajo que indica
+        "reserva tu cita", esto os lleva hacia un enlace para poderos loguear en nuestra página y así
+        poder reservar cita para ver a vuestro animal favorito.
+    </p>
+
 </div>
 
 @foreach (var dogsList in Model.Dogs)
@@ -24,7 +36,7 @@
                         </p>
                     </div>
                     <div class="card-footer">
-                        <a class="btn btn-secondary"  asp-controller="Account" asp-action="Login" asp-route-returnurl="/Client" >Reserva tu cita</a>
+                        <a class="btn btn-secondary" asp-controller="Account" asp-action="Login" asp-route-returnurl="/Client">Reserva tu cita</a>
                     </div>
                 </div>
             </div>
@@ -34,9 +46,6 @@
 }
 
 
-<div class="container">
-    <h2 class="text-center my-4 text-light">Gatos</h2>
-</div>
 
 @foreach (var dogsList in Model.Cats)
 {
@@ -48,7 +57,7 @@
                 <div class="card h-100 border-3 border-dark">
                     <img src="~/img/@dog.Image" class="card-img-top" alt="Waterfall">
                     <div class="card-body">
-                        <h5 class="card-title">@dog.Name (@dog.Age)</h5>
+                        <h5 class="card-title">@dog.Name, @dog.Age</h5>
                         <p class="card-text">
                             @dog.Description
                         </p>

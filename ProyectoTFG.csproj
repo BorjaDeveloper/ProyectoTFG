@@ -46,6 +46,7 @@
 		<Content Remove="Views\Home\Ayudanos.cshtml" />
 		<Content Remove="Views\Home\Index1.cshtml" />
 		<Content Remove="Views\Index.cshtml" />
+		<Content Remove="Views\Management\AnimalesParaBorrar.cshtml" />
 		<Content Remove="Views\Management\Index1.cshtml" />
 		<Content Remove="Views\Voluntario.cshtml" />
 		<Content Remove="wwwroot\css\estilos.css" />
@@ -57,6 +58,8 @@
 		<Content Remove="wwwroot\js\cookies.js" />
 		<Content Remove="wwwroot\js\JavaScript.js" />
 		<Content Remove="wwwroot\js\JavaScript1.js" />
+		<Content Remove="wwwroot\js\login.js" />
+		<Content Remove="wwwroot\js\site.js" />
 	</ItemGroup>
 
 	<ItemGroup>
