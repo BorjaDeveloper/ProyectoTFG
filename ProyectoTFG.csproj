@@ -11,21 +11,25 @@
 		<Compile Remove="Views\NewFolder2\**" />
 		<Compile Remove="Views\NewFolder3\**" />
 		<Compile Remove="Views\NewFolder4\**" />
+		<Compile Remove="Views\Voluntario\**" />
 		<Compile Remove="wwwroot\NewFolder\**" />
 		<Content Remove="Views\NewFolder1\**" />
 		<Content Remove="Views\NewFolder2\**" />
 		<Content Remove="Views\NewFolder3\**" />
 		<Content Remove="Views\NewFolder4\**" />
+		<Content Remove="Views\Voluntario\**" />
 		<Content Remove="wwwroot\NewFolder\**" />
 		<EmbeddedResource Remove="Views\NewFolder1\**" />
 		<EmbeddedResource Remove="Views\NewFolder2\**" />
 		<EmbeddedResource Remove="Views\NewFolder3\**" />
 		<EmbeddedResource Remove="Views\NewFolder4\**" />
+		<EmbeddedResource Remove="Views\Voluntario\**" />
 		<EmbeddedResource Remove="wwwroot\NewFolder\**" />
 		<None Remove="Views\NewFolder1\**" />
 		<None Remove="Views\NewFolder2\**" />
 		<None Remove="Views\NewFolder3\**" />
 		<None Remove="Views\NewFolder4\**" />
+		<None Remove="Views\Voluntario\**" />
 		<None Remove="wwwroot\NewFolder\**" />
 	</ItemGroup>
 
@@ -33,6 +37,8 @@
 		<Compile Remove="Controllers\Cliente.cs" />
 		<Compile Remove="Controllers\HomeController1.cs" />
 		<Compile Remove="Controllers\Interno.cs" />
+		<Compile Remove="Controllers\Voluntario.cs" />
+		<Compile Remove="Views\Client\reserva.cshtml.cs" />
 		<Compile Remove="Views\Home\Index1.cshtml.cs" />
 		<Compile Remove="Views\Home\login.cshtml.cs" />
 		<Compile Remove="Views\Home\QuienesSomos.cshtml.cs" />
@@ -43,6 +49,7 @@
 
 	<ItemGroup>
 		<Content Remove="Controllers\Index.cshtml" />
+		<Content Remove="Views\Client\reserva.cshtml" />
 		<Content Remove="Views\Home\Ayudanos.cshtml" />
 		<Content Remove="Views\Home\Index1.cshtml" />
 		<Content Remove="Views\Index.cshtml" />

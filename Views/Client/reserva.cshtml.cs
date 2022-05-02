@@ -1,9 +1,9 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace ProyectoTFG.Views.Management
+namespace ProyectoTFG.Views.Client
 {
-    public class Index1Model : PageModel
+    public class reservaModel : PageModel
     {
         public void OnGet()
         {
