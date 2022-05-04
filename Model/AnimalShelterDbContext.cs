@@ -7,6 +7,7 @@ namespace ProyectoTFG.Model
         public static User? CurrentUser;
 
         public DbSet<User> Users => Set<User>();
+        public DbSet<Volunteer> Volunteers => Set<Volunteer>();
         public DbSet<Animal> Animals => Set<Animal>();
 
         public AnimalShelterDbContext(DbContextOptions<AnimalShelterDbContext> options) : base(options)
@@ -27,6 +28,18 @@ namespace ProyectoTFG.Model
                 var client = new User("Andrea", "andrea@gmail.com");
 
                 context.AddRange(new[] { admin, volunteer, client });
+
+                // Voluntarios
+                var mañ1 = new Volunteer(VolunteerTypeEnum.Mañana, "Andrés", "Andrés lleva con nosotros más de 5 años y es un apasionado de los gatos");
+                var mañ2 = new Volunteer(VolunteerTypeEnum.Mañana, "Enrique", "Enrique se encarga de que todos los papeles de tu nuevo animal estén en orden");
+                var mañ3 = new Volunteer(VolunteerTypeEnum.Mañana, "Andrea", "Tenemos muchísima suerte de contar con Andrea, una veterinaria que trabaja por devoción en nuestra protectora");               
+
+                context.AddRange(new[] { mañ1, mañ2, mañ3 });
+
+                var tar1 = new Volunteer(VolunteerTypeEnum.Tarde, "Isabel", "Es la encargada de dar los paseos a nuestros perros a última hora y de formar a todo nuevo voluntario");
+                var tar2 = new Volunteer(VolunteerTypeEnum.Tarde, "Lara", "Lara se encarga de promocionar y recoger todas las ayudas que nos dais");
+
+                context.AddRange(new[] { tar1, tar2 });
 
                 // Animales
                 var dog1 = new Animal(AnimalTypeEnum.Dog, "Naye", "Naye es una hembra de 6 años, mezcla de galso. Extremadamente cariñosa y amable con los niños.", 2, "1.jpg");

@@ -2,7 +2,6 @@
     ViewData["Title"] = "Usuario";
 }
 
-
 <body>
 
     <section class="banner mt-3" style="min-height: 100vh;
@@ -13,17 +12,17 @@
     align-items: center;
     color: #ffff;
     padding-bottom: 20px;">
-        <h2>RESERVA TU HORA</h2>
-        <div class="card-contenedor mt-5" style="display: flex;
+        <h2>RESERVA TU CITA</h2>
+        <div class="card-contenedor my-5" style="display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;">
-            <div class="card-img mt-3">
+            <div class="card-img my-3">
             </div>
-            <div class="card-contenido mt-3">
-                <h3>Reserva</h3>
+            <div class="card-contenido my-3">
+                <h3>Completa tus datos</h3>
                 <form id="reservar-hora">
-                    <div class="form-row mt-3">
+                    <div class="form-row my-3">
                         <!-- <select name="dias">
                             <option value="dia-seleccionar">Seleccionar dia</option>
                             <option value="domingo">Domingo</option>
@@ -54,21 +53,16 @@
                                min="10:00" max="24:00" required>
 
 
-
-
                     </div>
 
-                    <div class="form-row mt-3">
+                    <div class="form-row my-3">
                         <input type="text" placeholder="Nombre completo" id="nombre" name="nombre">
                         <input type="text" placeholder="Telefono" id="telefono" name="telefono">
-
                     </div>
 
+                    <div class="form-row my-3">
 
-                    <div class="form-row mt-3">
-
-
-                        <div class="select mt-3">
+                        <div class="select my-3">
                             <select name="servicio" id="servicio">
                                 <option selected disabled>Perro</option>
                                 <option value="perro 1">Naye</option>
@@ -77,42 +71,34 @@
                                 <option value="perro 4">Kirian</option>
                                 <option value="perro 5">Sito</option>
                                 <option value="perro 6">Kiran</option>
+                                <option value="perro 7">Ninguno</option>
                             </select>
                         </div>
 
-                        <div class="select mt-3">
+                        <div class="select my-3">
                             <select name="servicio" id="servicio">
                                 <option selected disabled>Gato</option>
                                 <option value="perro 1">Apolo</option>
                                 <option value="perro 2">Disha</option>
-                                <option value="perro 3">Rayo</option>     
-                                <option value="perro 3">Israel</option>  
+                                <option value="perro 3">Rayo</option>
+                                <option value="perro 3">Israel</option>
+                                <option value="perro 4">Ninguno</option>
                             </select>
                         </div>
 
                         <div class="reserva my-4">
 
-                            <input type="submit" value="RESERVAR HORA">
+                            <a href="https://localhost:7018/Home/Reserva" class="btn btn-secondary border-3 border-white">Reserva tu cita</a>
 
                         </div>
-
-
                     </div>
-
                 </form>
-
             </div>
-
-
-
         </div>
 
     </section>
 
-
     <script src="~/js/app.js" type="module"></script>
-
-
 
 </body>
 

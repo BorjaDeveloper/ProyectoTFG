@@ -4,6 +4,8 @@
 
 }
 
+@model VolunteersModel
+
 <body>
 
     <!-- Contenido sección 1-->
@@ -54,6 +56,58 @@
             </div>
         </div>
     </section>
+
+    @foreach (var mañanaList in Model.Mañana)
+    {
+        <div class="row row-cols-1 row-cols-md-3 g-4 my-4">
+
+            @foreach (var volunteer in mañanaList)
+            {
+                <div class="col">
+                    <div class="card h-100 border-3 border-dark">
+                        <div class="card-body">
+                            <h5 class="card-title">@volunteer.Name</h5>
+                            <p class="card-text">
+                                @volunteer.Description
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <a class="btn btn-secondary" asp-controller="Account" asp-action="Login" asp-route-returnurl="/Client">Reserva tu cita</a>
+                        </div>
+                    </div>
+                </div>
+            }
+
+        </div>
+    }
+
+
+
+    @foreach (var tardeList in Model.Tarde)
+    {
+        <div class="row row-cols-1 row-cols-md-3 g-4 my-4">
+
+            @foreach (var volunteer in tardeList)
+            {
+                <div class="col">
+                    <div class="card h-100 border-3 border-dark">
+                        <div class="card-body">
+                            <h5 class="card-title">@volunteer.Name</h5>
+                            <p class="card-text">
+                                @volunteer.Description
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <a class="btn btn-secondary" asp-controller="Account" asp-action="Login" asp-route-returnurl="/Client">Reserva tu cita</a>
+                        </div>
+                    </div>
+                </div>
+            }
+
+        </div>
+    }
+
+
 
 
 </body>

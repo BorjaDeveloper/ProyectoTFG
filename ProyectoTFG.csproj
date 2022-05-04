@@ -38,6 +38,7 @@
 		<Compile Remove="Controllers\HomeController1.cs" />
 		<Compile Remove="Controllers\Interno.cs" />
 		<Compile Remove="Controllers\Voluntario.cs" />
+		<Compile Remove="Models\VolunteerModel.cshtml.cs" />
 		<Compile Remove="Views\Client\reserva.cshtml.cs" />
 		<Compile Remove="Views\Home\Index1.cshtml.cs" />
 		<Compile Remove="Views\Home\login.cshtml.cs" />
@@ -49,6 +50,7 @@
 
 	<ItemGroup>
 		<Content Remove="Controllers\Index.cshtml" />
+		<Content Remove="Models\VolunteerModel.cshtml" />
 		<Content Remove="Views\Client\reserva.cshtml" />
 		<Content Remove="Views\Home\Ayudanos.cshtml" />
 		<Content Remove="Views\Home\Index1.cshtml" />

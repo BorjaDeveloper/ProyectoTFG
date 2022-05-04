@@ -10,10 +10,5 @@ namespace ProyectoTFG.Controllers
         {
             return View();
         }
-
-        public IActionResult Voluntarios()
-        {
-            return View();
-        }
     }
 }
