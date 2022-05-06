@@ -68,7 +68,6 @@
 		<Content Remove="wwwroot\js\JavaScript.js" />
 		<Content Remove="wwwroot\js\JavaScript1.js" />
 		<Content Remove="wwwroot\js\login.js" />
-		<Content Remove="wwwroot\js\site.js" />
 	</ItemGroup>
 
 	<ItemGroup>
